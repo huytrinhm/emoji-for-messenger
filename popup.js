@@ -40,7 +40,7 @@ switchBtn.addEventListener("click", () => {
   switchBtn.classList.toggle("off");
 });
 
-chrome.tabs.query({ active: true }, function ([tab]) {
+chrome.tabs.query({ active: true, currentWindow }, function ([tab]) {
   url = tab.url;
   if (!url.startsWith("http://") && !url.startsWith("https://")) {
     updateStatus();

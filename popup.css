@@ -147,7 +147,7 @@ button {
 }
 
 .switch:enabled .switch-knob {
-  transition: 0.3s right;
+  transition: 0.3s box-shadow, 0.3s right;
 }
 
 .switch:disabled .switch-knob {

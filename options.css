@@ -59,6 +59,7 @@ body {
     justify-content: flex-start;
     align-items: stretch;
     background-color: var(--white);
+    color: var(--black);
 }
 
 a {
