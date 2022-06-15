@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>:emoji: for Messenger Settings</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300..500,0,0">
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <div class="header">
+        <p><code>:emoji:</code> for Messenger Settings</p>
+    </div>
+
+    <div class="main">
+        <p>Enable/disable this extension by clicking on it's icon on the toolbar. Edit and save the table below to fit your preferences. All <code>:name:</code> will be substituted with the corresponding emoji. Emoji names must not contain colon charater (:) and/or white space charater. You can import your preferences from a file or export the current preferences into a file.</p>
+        <div class="action-btns">
+            <button class="save-btn green">Save</button>
+            <label class="blue">
+                <input type="file" accept=".json" class="import-inp">
+                Import
+            </label>
+            <button class="export-btn yellow">Export</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Emoji</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody class="datalist"></tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>Developed by <a href="https://huytrinhm.me" target="_blank" rel="noopener noreferrer" title="https://huytrinhm.me">huytrinhm</a></p>
+    </div>
+
+    <script src="options.js" type="module"></script>
+</body>
+
+</html>

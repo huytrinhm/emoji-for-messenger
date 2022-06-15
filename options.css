@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Code+Pro:wght@400&display=swap');
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --extra-light-gray: rgb(245, 245, 245);
+    --light-gray: rgb(225, 225, 225);
+    --dark-gray: rgb(100, 100, 100);
+    --extra-dark-gray: rgb(45, 45, 45);
+    --blurple: #5865f2;
+    --green: hsl(141, 29%, 50%);
+    --dark-green: hsl(141, 29%, 40%);
+    --red: hsl(12, 65%, 45%);
+    --dark-red: hsl(12, 65%, 40%);
+    --blue: hsl(225, 60%, 50%);
+    --dark-blue: hsl(225, 60%, 40%);
+    --yellow: hsl(45, 80%, 50%);
+    --dark-yellow: hsl(45, 80%, 45%);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black: #fff;
+        --white: #1a1a1a;
+        --extra-light-gray: rgb(45, 45, 45);
+        --light-gray: rgb(80, 80, 80);
+        --dark-gray: rgb(225, 225, 225);
+        --extra-dark-gray: rgb(245, 245, 245);
+        --blurple: #5865f2;
+        --green: hsl(141, 29%, 50%);
+        --dark-green: hsl(141, 29%, 40%);
+        --red: hsl(12, 65%, 45%);
+        --dark-red: hsl(12, 65%, 40%);
+        --blue: hsl(225, 60%, 50%);
+        --dark-blue: hsl(225, 60%, 40%);
+        --yellow: hsl(45, 80%, 50%);
+        --dark-yellow: hsl(45, 80%, 45%);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: var(--white);
+}
+
+a {
+    color: currentColor;
+    font-weight: 500;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    background-color: var(--light-gray);
+    color: var(--blurple);
+    border-radius: 0.25em;
+}
+
+button,
+label {
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 10px;
+}
+
+.header p {
+    font-size: 30px;
+    margin-block: 0.5em;
+    font-weight: 700;
+    color: var(--black);
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: clamp(400px, 70%, 800px);
+    margin-inline: auto;
+    margin-bottom: 30px;
+}
+
+.main > p {
+    align-self: start;
+    margin-inline: 7px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.action-btns {
+    margin-block-end: 10px;
+}
+
+.action-btns button,
+.action-btns label {
+    color: #fff;
+    font-size: 17px;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-inline: 20px;
+}
+
+.action-btns input[type=file] {
+    display: none;
+}
+
+.main table {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 1px;
+}
+
+td, th {
+    padding: 0.2em;
+    text-align: center;
+}
+
+.main td {
+    user-select: all;
+}
+
+.main td:nth-last-child(1) {
+    user-select: none;
+}
+
+.main td button {
+    min-width: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: inherit;
+    padding: 0.2em;
+    border-radius: 5px;
+}
+
+button.red {
+    background-color: var(--red);
+}
+
+button.red:hover {
+    background-color: var(--dark-red);
+}
+
+button.green {
+    background-color: var(--green);
+}
+
+button.green:hover {
+    background-color: var(--dark-green);
+}
+
+button.blue,
+label.blue {
+    background-color: var(--blue);
+}
+
+button.blue:hover,
+label.blue:hover {
+    background-color: var(--dark-blue);
+}
+
+button.yellow {
+    background-color: var(--yellow);
+}
+
+button.yellow:hover {
+    background-color: var(--dark-yellow);
+}
+
+.main thead th:nth-last-child(1) {
+    width: 15%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background-color: var(--extra-light-gray);
+    margin-top: auto;
+    padding: 0 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}
