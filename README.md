@@ -16,6 +16,11 @@ Quickly type your favorite emoji in any chatbox. Customize your own list of emoj
 
 
 ## Screenshots
-![Options](/screenshots/options.png?raw=true "Options page")
-![Popup](/screenshots/popup.png?raw=true "Extension popup")
-![Demo](/screenshots/demo.gif?raw=true "Demo")
+### Options page
+<img width="700" src="https://raw.githubusercontent.com/huytrinhm/emoji-for-messenger/master/screenshots/options.png">
+
+### Popup
+<img width="400" src="https://raw.githubusercontent.com/huytrinhm/emoji-for-messenger/master/screenshots/popup.png">
+
+### Demo
+<img width="400" src="https://raw.githubusercontent.com/huytrinhm/emoji-for-messenger/master/screenshots/demo.gif">
