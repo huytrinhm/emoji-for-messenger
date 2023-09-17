@@ -30,9 +30,11 @@ function addEmptyRow() {
   let tr = document.createElement("tr");
   let tdName = document.createElement("td");
   tdName.contentEditable = true;
+  tdName.spellcheck = false;
   tdName.addEventListener("input", onTextChanged);
   let tdEmoji = document.createElement("td");
   tdEmoji.contentEditable = true;
+  tdEmoji.spellcheck = false;
   tdEmoji.addEventListener("input", onTextChanged);
   let tdDelete = document.createElement("td");
   let btnDelete = document.createElement("button");
@@ -71,11 +73,13 @@ function updateDatalist() {
     let txtName = document.createTextNode(key);
     tdName.appendChild(txtName);
     tdName.contentEditable = true;
+    tdName.spellcheck = false;
     tdName.addEventListener("input", onTextChanged);
     let tdEmoji = document.createElement("td");
     let txtEmoji = document.createTextNode(value);
     tdEmoji.appendChild(txtEmoji);
     tdEmoji.contentEditable = true;
+    tdEmoji.spellcheck = false;
     tdEmoji.addEventListener("input", onTextChanged);
     let tdDelete = document.createElement("td");
     let btnDelete = document.createElement("button");
