@@ -2,44 +2,15 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('fonts/montserrat.woff2') format('woff2') tech('variations'),
-         url('fonts/montserrat.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/montserrat.woff2') format('woff2') tech('variations'),
-         url('fonts/montserrat.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/montserrat.woff2') format('woff2') tech('variations'),
-         url('fonts/montserrat.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/montserrat.woff2') format('woff2') tech('variations'),
-         url('fonts/montserrat.woff') format('woff');
-    font-weight: 700;
+    src: url('fonts/montserrat.woff2') format('woff2');
+    font-weight: 400 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Source Code Pro';
-    src: url('fonts/sourcecodepro.woff2') format('woff2') tech('variations'),
-         url('fonts/sourcecodepro.woff') format('woff');
+    src: url('fonts/sourcecodepro.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
